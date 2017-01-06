@@ -4,7 +4,7 @@ It changes it's behaviour accordingly to screen resolution.
 
 ## How to use?
 
-** Note: There will be themes. Currently it's only white without border etc. **
+**Note: There will be themes. Currently it's only white without border etc.**
 
 You need to add ``<meta>`` tag for viewport info:
 ``` html
