@@ -4,6 +4,8 @@ body {
 }
 
 .r-menu, .r-menu * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -16,13 +18,22 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative;
-  top: 50px;
+  -moz-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  -webkit-transform: translate(-100%);
+  transform: translate(-100%);
 }
 @media screen and (min-width: 480px) {
   .r-menu ul {
-    position: static;
-    top: 0;
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@media screen and (min-width: 480px) {
+  .r-menu li {
+    float: left;
   }
 }
 .r-menu li a {
@@ -36,4 +47,9 @@ body {
   float: right;
   font-size: 2em;
   line-height: 50px;
+}
+@media screen and (min-width: 480px) {
+  .r-menu span.fa {
+    display: none;
+  }
 }
