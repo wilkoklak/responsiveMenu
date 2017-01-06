@@ -52,7 +52,7 @@ function toggleMenu(elem) {
 }
 ```
 
-See [``demo.htm``](../blob/master/demo.htm) for a reference
+See [``demo.htm``](demo.htm) for a reference
 
 ## Classes
 - ``.r-menu`` - this is a class that the main container should have
@@ -64,4 +64,4 @@ When resolution is lower than 480px there will be a "hamburger"
 which toggles the menu list.
 If the resolution is higher than 480px it will behave in a standard way.
 
-Edit ``$break`` variable in source files inside ``src`` or edit compiled ``*.css`` inside ``dist/css`` if you want to change it.
+Edit ``$break`` variable in source files inside ``src`` or edit compiled ``*.css`` inside ``dist`` if you want to change it.
