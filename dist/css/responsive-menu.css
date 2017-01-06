@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.r-menu, .r-menu * {
+  box-sizing: border-box;
+}
+
+.r-menu {
+  height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.r-menu ul {
+  line-height: 50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50px;
+}
+@media screen and (min-width: 480px) {
+  .r-menu ul {
+    position: static;
+    top: 0;
+  }
+}
+.r-menu li a {
+  display: block;
+  text-decoration: none;
+}
+.r-menu li a:hover {
+  cursor: pointer;
+}
+.r-menu span.fa {
+  float: right;
+  font-size: 2em;
+  line-height: 50px;
+}

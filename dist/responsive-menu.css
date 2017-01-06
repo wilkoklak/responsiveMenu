@@ -1,0 +1,24 @@
+.r-menu {
+  line-height: 50px;
+  height: 50px;
+}
+.r-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50px;
+}
+@media screen and (min-width: 480px) {
+  .r-menu ul {
+    position: static;
+    top: 0;
+  }
+}
+.r-menu li a {
+  display: block;
+  text-decoration: none;
+}
+.r-menu li a:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "responsive-menu",
+  "version": "0.1.0",
+  "description": "A responsive menu for your website",
+  "main": "dist/responsive-menu.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wilkoklak/responsiveMenu.git"
+  },
+  "keywords": [
+    "menu",
+    "responsive",
+    "css3",
+    "website",
+    "utility"
+  ],
+  "author": "Artur Boryś",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wilkoklak/responsiveMenu/issues"
+  },
+  "homepage": "https://github.com/wilkoklak/responsiveMenu#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}
