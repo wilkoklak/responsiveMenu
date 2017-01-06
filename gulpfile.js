@@ -6,9 +6,9 @@ const rename = require('gulp-rename');
 gulp.task('default', () => {
 	gulp.src('src/*.sass')
 		.pipe(compass({
-			css: 'dist/css',
+			css: 'dist/',
 			sass: 'src',
 			task: 'watch'
 		}))
-		.pipe(gulp.dest('dist/css'))
+		.pipe(gulp.dest('dist/'))
 })

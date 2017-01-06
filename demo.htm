@@ -3,14 +3,20 @@
 <head>
 	<title>responsiveMenu demo</title>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link rel='stylesheet' href='dist/css/responsive-menu.css'>
+	<link rel='stylesheet' href='dist/responsive-menu.css'>
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	</style>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<meta charset='utf-8'>
 </head>
 <body>
 <div class='r-menu'>
-	<span class='fa fa-navicon' onclick='toggleMenu()'></span>
-	<ul>
+	<span class='fa fa-navicon' onclick='toggleMenu(this.parentNode)'></span>
+	<ul class='r-menu-list'>
 		<li><a href='#'>Home</a></li>
 		<li><a href='#'>Products</a></li>
 		<li><a href='#'>About</a></li>
@@ -18,8 +24,13 @@
 	</ul>
 </div>
 <script>
-function toggleMenu() {
-	document.querySelector('.r-menu ul').classList.toggle('slide-down');
+function toggleMenu(elem) {
+	var ul = elem.querySelector('.r-menu-list');
+	if(ul.classList.contains('slide-down')) {
+		ul.classList.remove('slide-down');
+	} else {
+		ul.classList.add('slide-down');
+	}
 }
 </script>
 </body>

@@ -1,14 +1,10 @@
 @import global
 
-body
-	margin: 0
-	padding: 0
 .r-menu, .r-menu *
 	+box-sizing(border-box)
 .r-menu
 	background-color: #fff
 	height: 50px
-	border-bottom: 1px solid #ddd
 	ul
 		z-index: -1
 		line-height: 50px
@@ -20,8 +16,10 @@ body
 		&.slide-down
 			+transform(translateY(50px))
 		@media screen and (min-width: 480px)
-			+transform(translateY(0))
-			z-index: 1
+			&, &.slide-down
+				+transform(translateY(0))
+				transition: none
+				z-index: 1
 	li
 		@media screen and (min-width: 480px)
 			float: left
