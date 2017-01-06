@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class='r-menu'>
-		<span class='fa fa-navicon'></span>
+		<span class='fa fa-navicon' onclick='toggleMenu()'></span>
 		<ul>
 			<li><a href='#'>Home</a></li>
 			<li><a href='#'>Products</a></li>
@@ -17,5 +17,11 @@
 			<li><a href='#'>Work</a></li>
 		</ul>
 	</div>
+<script>
+function toggleMenu() {
+	document.querySelector('.r-menu ul').classList.toggle('slide-down');
+}
+
+</script>
 </body>
 </html>
