@@ -3,19 +3,24 @@
 <head>
 	<title>responsiveMenu demo</title>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link rel='stylesheet' href='dist/responsive-menu.css'>
+	<!-- <link rel='stylesheet' href='dist/responsive-menu.css'> -->
+	<link rel='stylesheet' href='dist/minified/responsive-menu-bundle.min.css'>
 	<style>
 	body {
+		font-family: Arial, sans-serif;
 		margin: 0;
 		padding: 0;
+		background-color: #eee;
 	}
 	</style>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<meta charset='utf-8'>
 </head>
 <body>
-<div class='r-menu'>
-	<span class='fa fa-navicon' onclick='toggleMenu(this.parentNode)'></span>
+<div class='r-menu r-menu-light'>
+	<div class='r-menu-panel'>
+		<span class='fa fa-navicon' onclick='toggleMenu(this.parentNode.parentNode)'></span>
+	</div>
 	<ul class='r-menu-list'>
 		<li><a href='#'>Home</a></li>
 		<li><a href='#'>Products</a></li>
@@ -23,6 +28,13 @@
 		<li><a href='#'>Work</a></li>
 	</ul>
 </div>
+<h1>Theme selector:</h1>
+<select autocomplete='off' onchange='changeTheme(this.value)'>
+	<option value='light'>Light</option>
+	<option value='dark'>Dark</option>
+	<option value='red'>Red</option>
+	<option value='blue'>Blue</option>
+</select>
 <script>
 function toggleMenu(elem) {
 	var ul = elem.querySelector('.r-menu-list');
@@ -35,6 +47,12 @@ function toggleMenu(elem) {
 			ul.classList.add('slide-down');
 		}
 	}
+}
+function changeTheme(theme) {
+	var menu = document.querySelector('.r-menu');
+	menu.className = '';
+	menu.classList.add('r-menu');
+	menu.classList.add('r-menu-' + theme);
 }
 </script>
 </body>

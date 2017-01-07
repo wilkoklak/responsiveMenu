@@ -1,0 +1,23 @@
+.r-menu.r-menu-light {
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.r-menu.r-menu-light .r-menu-panel {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.r-menu.r-menu-light .r-menu-list {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.r-menu.r-menu-light .r-menu-list li a {
+  color: #222;
+}
+.r-menu.r-menu-light .r-menu-list li a:hover {
+  background-color: #ddd;
+}
+.r-menu.r-menu-light span.fa:hover {
+  background-color: #ddd;
+}

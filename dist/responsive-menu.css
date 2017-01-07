@@ -5,15 +5,26 @@
 }
 
 .r-menu {
-  background-color: #fff;
+  height: 50px;
+  position: relative;
+  z-index: 10;
+}
+.r-menu .r-menu-panel {
   height: 50px;
 }
+@media screen and (min-width: 480px) {
+  .r-menu .r-menu-panel {
+    display: none;
+  }
+}
 .r-menu .r-menu-list {
-  z-index: -1;
   line-height: 50px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: -1;
+  position: relative;
+  top: -50px;
   transition: transform 1s;
   -moz-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
@@ -28,6 +39,7 @@
 }
 @media screen and (min-width: 480px) {
   .r-menu .r-menu-list, .r-menu .r-menu-list.slide-down {
+    position: static;
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -50,14 +62,10 @@
   cursor: pointer;
 }
 .r-menu span.fa {
+  display: block;
   cursor: pointer;
   float: right;
-  margin-right: 0.25em;
+  padding: 0 0.25em;
   font-size: 2em;
   line-height: 50px;
-}
-@media screen and (min-width: 480px) {
-  .r-menu span.fa {
-    display: none;
-  }
 }
