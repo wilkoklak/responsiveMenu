@@ -1,0 +1,25 @@
+{
+  "name": "responsive-menu",
+	"version": "1.0.0",
+  "description": "A responsive menu for your website",
+  "main": "dist/responsive-menu.css",
+  "authors": [
+    "Artur Boryś"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "menu",
+    "responsive",
+    "css3",
+    "website",
+    "utility"
+  ],
+  "homepage": "https://github.com/wilkoklak/responsiveMenu",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
