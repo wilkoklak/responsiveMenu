@@ -1,6 +1,5 @@
 {
   "name": "responsive-menu",
-	"version": "1.0.0",
   "description": "A responsive menu for your website",
   "main": "dist/responsive-menu.css",
   "authors": [
@@ -20,6 +19,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+		"releases"
   ]
 }
